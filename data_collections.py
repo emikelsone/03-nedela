@@ -21,7 +21,8 @@ for num in numbers:
         even_numbers.append(num)
 print("Even numbers:", even_numbers)
 
-print("\n ---Slice ---")
+print("\n ---Slice ---") #slice demonstracija
 print("First three numbers:", numbers[0:3])
 print("Last three numbers:", numbers[-3:])
 print("Numbers from index 2 to 4:", numbers[2:5])
+
