@@ -21,8 +21,15 @@ for num in numbers:
         even_numbers.append(num)
 print("Even numbers:", even_numbers)
 
-print("\n ---Slice ---") #slice demonstracija
-print("First three numbers:", numbers[0:3])
-print("Last three numbers:", numbers[-3:])
-print("Numbers from index 2 to 4:", numbers[2:5])
+print("\n ---Saraksti ---") #slice demonstracija
+print("Pirmie trīs skaitļi:", numbers[0:3])
+print("Pēdējie trīs skaitļi:", numbers[-3:])
+print("Skaitļi no indeksa 2 līdz 4:", numbers[2:5])
+
+students = {"Anna": 85, "Jānis": 72, "Līga": 95, "Pēteris": 68, "Zane": 90, "Mārtiņš": 78}
+print("\n ---Vārdnīcas ---")
+
+#lai nevajadzetu rakstīt katru vārdu un vērtību atsevišķi, var izmantot ciklu, lai izdrukātu visus vārdus un vērtības vārdnīcā.
+for name, grade in students.items():
+    print(name, ":", grade)
 
