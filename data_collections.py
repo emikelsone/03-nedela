@@ -35,3 +35,26 @@ for name, grade in students.items():
 
 best_student = max(students, key=students.get)
 print("Labākais students:", best_student, "ar atzīmi", students[best_student])
+
+
+print("\n ---Studenti ar atzīmi >= 80 ---")
+
+students_list = [
+{"name": "Anna", "grade": 85},
+{"name": "Jānis", "grade": 72}, 
+{"name": "Līga", "grade": 95}, 
+{"name": "Pēteris", "grade": 68}, 
+{"name": "Zane", "grade": 90}, 
+{"name": "Mārtiņš", "grade": 78}
+]
+
+
+good_students = []
+for student in students_list:
+    if student["grade"] >= 80:
+        good_students.append(student)
+
+for i, student in enumerate(good_students, start=1):
+    print(f"{i}. {student['name']} - {student['grade']}")
+
+
