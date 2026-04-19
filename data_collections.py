@@ -33,3 +33,5 @@ print("\n ---Vārdnīcas ---")
 for name, grade in students.items():
     print(name, ":", grade)
 
+best_student = max(students, key=students.get)
+print("Labākais students:", best_student, "ar atzīmi", students[best_student])
