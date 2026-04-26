@@ -60,3 +60,21 @@ def average(numbers):
             raise ValueError("Saraksts nevar būt tukšs")
         total_sum = total(numbers)
         return total_sum / len(numbers)  
+
+if __name__ == "__main__":
+    print(capitalize("hello"))
+    print(count_words("hello world python"))
+    
+    print(truncate("Šis ir ļoti garš teikums", 10))
+
+    print(clamp(15, 0, 10))
+    print(clamp(-5, 0, 10))
+    print(clamp(7, 0, 10))
+
+    print(is_prime(7))
+    print(is_prime(10))
+
+    print(factorial(5))
+
+    print(total([1, 2, 3, 4, 5]))
+    print(average([1, 2, 3, 4, 5]))
