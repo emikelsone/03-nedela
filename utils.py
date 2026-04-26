@@ -26,3 +26,13 @@ if __name__ == "__main__":
         print(count_words("hello world python"))
         print(truncate("hello world python", 10))
         print(clamp(5, 1, 10))
+
+    def is_prime(num):
+        if num < 2:
+            return False
+
+        for i in range(2, num):
+            if num % i == 0:
+                return False
+            
+        return True
