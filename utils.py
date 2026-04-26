@@ -36,3 +36,27 @@ if __name__ == "__main__":
                 return False
             
         return True
+
+def factorial(n):
+    if n < 0:
+        raise ValueError("Skaitlis nevar būt negatīvs")
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        result = 1
+        for i in range(1, n + 1):
+            result *= i
+
+        return result
+    
+def total(numbers):
+        total_sum = 0
+        for num in numbers:
+            total_sum += num
+        return total_sum
+    
+def average(numbers):
+        if len(numbers) == 0:
+            raise ValueError("Saraksts nevar būt tukšs")
+        total_sum = total(numbers)
+        return total_sum / len(numbers)  
